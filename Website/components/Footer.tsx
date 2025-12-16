@@ -2,6 +2,19 @@
 
 import { motion } from "framer-motion";
 
+/**
+ * Composant Footer - Pied de page du site
+ * 
+ * Affiche les liens de navigation, les mentions légales et les informations de copyright.
+ * Organisé en trois colonnes : Marque, Liens, et Légal.
+ * 
+ * @returns {JSX.Element} Footer avec liens de navigation et informations légales
+ * 
+ * @example
+ * ```tsx
+ * <Footer />
+ * ```
+ */
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -10,7 +23,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
-          <motion.div
+          <motion.div   
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -38,7 +51,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-discord-primary transition-colors">
+                <a href="https://github.com/BaptisteLeDev/OpenBot.git" className="text-gray-400 hover:text-discord-primary transition-colors">
                   GitHub
                 </a>
               </li>
@@ -50,23 +63,28 @@ export default function Footer() {
             </ul>
           </motion.div>
 
-          {/* Contact */}
+          {/* Legal */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
           >
-            <h4 className="text-white font-semibold mb-3">Communauté</h4>
+            <h4 className="text-white font-semibold mb-3">Légal</h4>
             <ul className="space-y-2">
               <li>
                 <a href="#" className="text-gray-400 hover:text-discord-primary transition-colors">
-                  Discord
+                  Mentions légales
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-400 hover:text-discord-primary transition-colors">
-                  Twitter
+                  Politique de confidentialité
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-gray-400 hover:text-discord-primary transition-colors">
+                  CGU
                 </a>
               </li>
             </ul>

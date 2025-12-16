@@ -2,6 +2,19 @@
 
 import { motion } from "framer-motion";
 
+/**
+ * Composant Hero - Section principale de la page d'accueil
+ * 
+ * Affiche le titre principal, la description et les boutons d'action avec des animations Framer Motion.
+ * Inclut des éléments d'arrière-plan animés et un indicateur de statut du bot.
+ * 
+ * @returns {JSX.Element} Section hero avec animations et contenu principal
+ * 
+ * @example
+ * ```tsx
+ * <Hero />
+ * ```
+ */
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
@@ -99,7 +112,7 @@ export default function Hero() {
           transition={{ delay: 1, duration: 0.8 }}
         >
           <motion.div
-            className="w-3 h-3 bg-green-500 rounded-full"
+            className="w-3 h-3 bg-red-500 rounded-full"
             animate={{ scale: [1, 1.2, 1] }}
             transition={{ duration: 2, repeat: Infinity }}
           />

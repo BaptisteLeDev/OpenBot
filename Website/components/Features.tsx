@@ -3,6 +3,10 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 
+/**
+ * Liste des fonctionnalités du bot OpenBot
+ * @type {Array<{title: string, description: string, icon: string}>}
+ */
 const features = [
   {
     title: "Création de parties",
@@ -36,6 +40,19 @@ const features = [
   },
 ];
 
+/**
+ * Composant Features - Présentation des fonctionnalités
+ * 
+ * Affiche une grille de cartes présentant les fonctionnalités principales du bot OpenBot.
+ * Chaque carte inclut une icône, un titre et une description avec des animations au scroll.
+ * 
+ * @returns {JSX.Element} Section features avec grille de cartes animées
+ * 
+ * @example
+ * ```tsx
+ * <Features />
+ * ```
+ */
 export default function Features() {
   return (
     <section className="relative py-24 px-6">
