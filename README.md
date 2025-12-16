@@ -21,10 +21,8 @@ OpenBot est un bot Discord innovant qui permet aux joueurs de créer, configurer
 
 ```
 OpenBot/
-├── Website/          # Site web Next.js 14+ (vitrine + dashboard)
-├── bot/             # Bot Discord (à venir)
-├── api/             # API REST (à venir)
-└── websocket/       # Serveur WebSocket (à venir)
+├── Website/          # Site web Next.js 14+ (vitrine)
+
 ```
 
 ## Site Web
@@ -67,7 +65,6 @@ Le site sera accessible sur [http://localhost:3000](http://localhost:3000)
 - **TypeScript 5+** - Typage statique pour la robustesse du code
 - **Tailwind CSS 3.4+** - Framework CSS utility-first
   - Configuration personnalisée avec thème Discord
-  - Support dark mode natif
   - Animations personnalisées
 - **Framer Motion 11+** - Bibliothèque d'animations React
   - Animations de page
